@@ -30,9 +30,10 @@ Outras bibliotecas (ex: Axios, Mongoose, TypeORM)
 # ⚙️ Como Executar
 Clone o repositório:
 
-bash
+```bash
 git clone [URL-do-repositorio]
 Instale as dependências:
+```
 
 bash
 npm install
