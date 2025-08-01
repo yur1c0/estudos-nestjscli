@@ -30,28 +30,33 @@ Outras bibliotecas (ex: Axios, Mongoose, TypeORM)
 # ⚙️ Como Executar
 Clone o repositório:
 
-```bash
+```
+bash
 git clone [URL-do-repositorio]
 Instale as dependências:
 ```
 
+```
 bash
 npm install
 Configure o arquivo .env (se necessário):
+```
 
-env
+```env
 PORT=3000
 DB_URL=sua_string_de_conexao
+```
 
 Inicie o servidor:
 
+```
 bash
 npm start
+```
 Acesse:
-
-bash
+```
 http://localhost:3000
-
+```
 # 📝 Notas
 Este projeto é somente para fins de estudo e pode conter experimentações ou códigos não otimizados.
 
