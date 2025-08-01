@@ -4,6 +4,7 @@
 /build
 /tmp
 
+.gitignore
 # Logs
 logs
 *.log
