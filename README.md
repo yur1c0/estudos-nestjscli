@@ -20,9 +20,9 @@ Node.js (v18+)
 
 Express.js (ou outro framework, se usado)
 
-Banco de Dados (MongoDB, PostgreSQL, etc. – se aplicável)
+Banco de Dados (PostgreSQL)
 
-Ferramentas de Teste (Jest, Mocha, Supertest – opcional)
+Ferramentas de Teste (Jest, Mocha, Supertest)
 
 Outras bibliotecas (ex: Axios, Mongoose, TypeORM)
 
@@ -42,7 +42,8 @@ npm install
 Configure o arquivo .env (se necessário):
 ```
 
-```env
+```
+env
 PORT=3000
 DB_URL=sua_string_de_conexao
 ```
