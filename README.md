@@ -32,7 +32,7 @@ Clone o repositório:
 
 ```
 bash
-git clone [URL-do-repositorio]
+git clone https://github.com/yur1c0/estudos-nestjscli.git
 Instale as dependências:
 ```
 
