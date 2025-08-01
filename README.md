@@ -39,9 +39,10 @@ bash
 npm install
 Configure o arquivo .env (se necessário):
 
-.env
+env
 PORT=3000
 DB_URL=sua_string_de_conexao
+
 Inicie o servidor:
 
 bash
