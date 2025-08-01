@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CadastroController } from 'src/cadastro/cadastro.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { CadastroModule } from 'src/cadastro/cadastro.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -13,7 +13,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     host: 'localhost',
     database: 'postgres',
     synchronize: true,
-  }),CadastroController],
+  }),CadastroModule],
   controllers: [AppController],
   providers: [AppService],
 })
