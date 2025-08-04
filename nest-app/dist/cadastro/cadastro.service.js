@@ -18,15 +18,21 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const cadastro_entity_1 = require("./entities/cadastro.entity");
 let CadastroService = class CadastroService {
-    repository;
-    constructor(repository = (typeorm_2.Repository)) {
-        this.repository = repository;
+    createRepository;
+    constructor(createRepository) {
+        this.createRepository = createRepository;
+    }
+    alertError() {
+        throw new common_1.NotFoundException('Não encontrado.');
+    }
+    async findAll() {
+        return await this.createRepository.find();
     }
 };
 exports.CadastroService = CadastroService;
 exports.CadastroService = CadastroService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, typeorm_1.InjectRepository)(cadastro_entity_1.EntityCadastro)),
-    __metadata("design:paramtypes", [Object])
+    __metadata("design:paramtypes", [typeorm_2.Repository])
 ], CadastroService);
 //# sourceMappingURL=cadastro.service.js.map
